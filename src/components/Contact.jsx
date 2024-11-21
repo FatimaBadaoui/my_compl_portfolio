@@ -34,7 +34,7 @@ const Contact = () => {
     <div id="contact" className="py-6 max-w-[1000px] mx-auto md:my-12">
       <div className="pt-[100px]">
         <h1 className="text-4xl font-bold text-center md:text-4xl uppercase text-gray-200 mb-10">
-          Contact
+          get in touch
         </h1>
         <div>
           {contactsInfo.map((contact, index) => (
