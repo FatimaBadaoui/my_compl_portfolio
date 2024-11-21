@@ -1,3 +1,4 @@
+import { div } from "framer-motion/client";
 import {
   DiHtml5,
   DiCss3,
@@ -8,7 +9,7 @@ import {
   DiNodejsSmall,
   DiMongodb,
   DiGit,
-  DiGithub,
+  DiGithubBadge,
   DiLinux,
   DiNpm,
   DiTrello,
@@ -54,11 +55,11 @@ const About = () => {
       name: "Git",
     },
     {
-      icon: <DiGithub className="text-gray-800" />,
+      icon: <DiGithubBadge className="text-gray-800" />,
       name: "GitHub",
     },
     {
-      icon: <DiLinux className="text-blue-800" />,
+      icon: <DiLinux className="text-yellow-600" />,
       name: "Linux",
     },
     {
@@ -76,21 +77,25 @@ const About = () => {
   ];
 
   return (
-    <div className="px-4 text-gray-200 pb-8 md:py-12" id="about">
-      <h2 className="text-3xl font-bold mb-4 text-center">About</h2>
-      <div className="flex flex-col md:flex-row gap-10 justify-center ">
-        <p className="text-center mb-8">
-          I am a full-stack web developer with a passion for creating web
-          applications. I have experience with the following technologies:
-        </p>
+    <div id="about" className="pt-10 mt-10 max-w-[1200px] mx-auto">
+      <div className="px-8 text-gray-200 pb-8 md:py-12 mt-16">
+        <h2 className="text-3xl font-bold mb-10 text-center uppercase">About</h2>
+        <div className="flex flex-col md:flex-row gap-10 justify-center ">
+          <p className="text-center mb-8">
+            I am a full-stack web developer with a passion for creating web
+            applications. I have experience with the following technologies:
+          </p>
 
-        <div className="border border-purple-900 p-6 rounded-lg bg-purple-900 w-full">
-          {skills.map((skill, index) => (
-            <div key={index} className="">
-              <span>{skill.icon}</span>
-              <span>{skill.name}</span>
+          <div className="border border-purple-900 p-6 rounded-lg bg-purple-900 w-full">
+            <h2 className="text-2xl font-bold mb-4 text-center uppercase">Skills</h2>
+            <div className="flex flex-wrap gap-4 justify-center">
+              {skills.map((skill, index) => (
+                <span key={index} className="text-5xl">
+                  {skill.icon}
+                </span>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>
