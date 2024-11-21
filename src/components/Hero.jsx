@@ -5,8 +5,8 @@ import ShinyEffect from "./ShinyEffect.jsx";
 
 const Hero = () => {
   return (
-    <div className="mt-[25vh] max-w-[1200px] mx-auto relative">
-      <div className="grid md:grid-cols-2 place-items-center gap-8 p-4">
+    <div className="mt-[25vh] max-w-[1200px] mx-auto relative p-6">
+      <div className="grid md:grid-cols-2 place-items-center gap-8 p-2">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
