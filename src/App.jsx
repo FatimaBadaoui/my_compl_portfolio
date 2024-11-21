@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { About, Experience, Hero, Navbar, Portfolio } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Portfolio } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
+      <Contact />
     </>
   );
 }
