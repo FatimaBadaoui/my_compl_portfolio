@@ -20,7 +20,7 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-primary-200 md:text-7xl text-5xl tracking-tight mb-4"
+            className="text-whitish md:text-7xl text-5xl tracking-tight mb-4"
           >
             Hello, I am
           </motion.p>
