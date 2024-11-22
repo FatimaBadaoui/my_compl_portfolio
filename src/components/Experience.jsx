@@ -1,32 +1,13 @@
 import { motion } from "framer-motion";
 
-const Experience = () => {
-  const experiences = [
-    {
-      company: "Company 1",
-      position: "Position 1",
-      period: "Period 1",
-      description: "Description 1",
-      technologies: ["Tech 1", "Tech 2", "Tech 3"],
-    },
-    {
-      company: "Company 2",
-      position: "Position 2",
-      period: "Period 2",
-      description: "Description 2",
-      technologies: ["Tech 1", "Tech 2", "Tech 3"],
-    },
-    {
-      company: "Company 3",
-      position: "Position 3",
-      period: "Period 3",
-      description: "Description 3",
-      technologies: ["Tech 1", "Tech 2", "Tech 3"],
-    },
-  ];
+import { experiences } from "../utils/data.js";
 
+const Experience = () => {
   return (
-    <div id="experience" className="mt-10 max-w-[1200px] mx-auto px-6 md:my-20 pt-10">
+    <div
+      id="experience"
+      className="mt-10 max-w-[1200px] mx-auto px-6 md:my-20 pt-10"
+    >
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
