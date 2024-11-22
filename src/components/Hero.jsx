@@ -79,7 +79,7 @@ const Hero = () => {
         <motion.img
           src={heroImg}
           alt="hero image"
-          className="w-[300px] md:w-[450px] rounded-3xl shadow-lg"
+          className="w-[300px] md:w-[450px] rounded-3xl shadow-lg shadow-primary-500"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
