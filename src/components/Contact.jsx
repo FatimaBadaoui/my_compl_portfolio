@@ -31,18 +31,23 @@ const Contact = () => {
   ];
 
   return (
-    <div id="contact" className="py-6 max-w-[1000px] mx-auto md:my-12">
+    <div id="contact" className="py-10 max-w-[1000px] mx-auto md:my-12">
       <div className="pt-[100px]">
-        <h1 className="text-4xl font-bold text-center md:text-4xl uppercase text-gray-200 mb-10">
+        <motion.h1
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl text-gray-200 text-center mb-12 uppercase"
+        >
           get in touch
-        </h1>
+        </motion.h1>
         <div>
           {contactsInfo.map((contact, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="my-4 max-w-[350px] mx-auto pl-10"
             >
               <a

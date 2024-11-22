@@ -1,4 +1,5 @@
 import { AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   const projects = [
@@ -6,6 +7,7 @@ const Portfolio = () => {
       img: "https://via.placeholder.com/150",
       title: "Project #1",
       description: "This is a description of project 1",
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
       links: {
         github: "#",
         live: "#",
@@ -15,6 +17,7 @@ const Portfolio = () => {
       img: "https://via.placeholder.com/150",
       title: "Project #2",
       description: "This is a description of project 2",
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
       links: {
         github: "#",
         live: "#",
@@ -24,6 +27,7 @@ const Portfolio = () => {
       img: "https://via.placeholder.com/150",
       title: "Project #3",
       description: "This is a description of project 3",
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
       links: {
         github: "#",
         live: "#",
@@ -33,6 +37,7 @@ const Portfolio = () => {
       img: "https://via.placeholder.com/150",
       title: "Project #4",
       description: "This is a description of project 4",
+      technologies: ["React", "Tailwind CSS", "Framer Motion"],
       links: {
         github: "#",
         live: "#",
@@ -43,14 +48,22 @@ const Portfolio = () => {
   return (
     <div
       id="portfolio"
-      className="mt-10 max-w-[1200px] mx-auto px-6 md:my-20 pt-10"
+      className="mt-10 max-w-[1200px] mx-auto px-6 md:my-20 py-10"
     >
       <div className="mt-15 pt-10">
-        <h2 className="text-3xl font-bold text-gray-200 mb-8 uppercase text-center mt-10">
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl text-gray-200 text-center mb-12 uppercase mt-10"
+        >
           Portfolio
-        </h2>
+        </motion.h2>
         {projects.map((project, index) => (
-          <div
+          <motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+            transition={{ duration: 1, delay: 0.1 * index }}
             key={index}
             className={`flex flex-col md:flex-row ${
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
@@ -68,6 +81,16 @@ const Portfolio = () => {
                 {project.title}
               </h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
+              <div className="mb-4">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mr-2 mt-4 rounded px-2 py-1 bg-neutral-900 text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
               <div className="flex space-x-4">
                 <a
                   href={project.links.live}
@@ -83,7 +106,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

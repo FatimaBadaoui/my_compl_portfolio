@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="max-w-[1300px] mx-auto flex justify-between text-gray-500 text-xl items-center px-12 h-20">
         <a href="#">F. Badaoui</a>
 
-        <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
+        <ul className="hidden md:flex gap-8 z-10 cursor-pointer">
           <li>
             <Link to="about" smooth={true} offset={50} duration={500}>
               About
@@ -31,6 +31,11 @@ const Navbar = () => {
           <li>
             <Link to="portfolio" smooth={true} offset={50} duration={500}>
               Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link to="experience" smooth={true} offset={50} duration={500}>
+              Experience
             </Link>
           </li>
           <li>
@@ -74,6 +79,17 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Portfolio
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link
+                to="experience"
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={() => setIsOpen(false)}
+              >
+                Experience
               </Link>
             </li>
             <li className="cursor-pointer">

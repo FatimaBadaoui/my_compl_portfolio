@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+import { motion } from "framer-motion";
 import {
   DiHtml5,
   DiCss3,
@@ -79,15 +79,34 @@ const About = () => {
   return (
     <div id="about" className="pt-10 mt-10 max-w-[1200px] mx-auto">
       <div className="px-8 text-gray-200 pb-8 md:py-12 mt-16">
-        <h2 className="text-3xl font-bold mb-10 text-center uppercase">About</h2>
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl text-gray-200 text-center mb-12 uppercase"
+        >
+          About
+        </motion.h2>
         <div className="flex flex-col md:flex-row gap-10 justify-center ">
-          <p className="text-center mb-8">
+          <motion.p
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
             I am a full-stack web developer with a passion for creating web
             applications. I have experience with the following technologies:
-          </p>
+          </motion.p>
 
-          <div className="border border-purple-900 p-6 rounded-lg bg-purple-900 w-full">
-            <h2 className="text-2xl font-bold mb-4 text-center uppercase">Skills</h2>
+          <motion.div
+            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 1 }}
+            className="border border-purple-900 p-6 rounded-lg bg-purple-900 w-full"
+          >
+            <h2 className="text-2xl font-bold mb-4 text-center uppercase">
+              Skills
+            </h2>
             <div className="flex flex-wrap gap-4 justify-center">
               {skills.map((skill, index) => (
                 <span key={index} className="text-5xl">
@@ -95,7 +114,7 @@ const About = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
