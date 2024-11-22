@@ -1,14 +1,12 @@
-import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import { projects } from "../utils/data.js";
 
 const Portfolio = () => {
-
   return (
     <div
       id="portfolio"
-      className="mt-10 max-w-[1200px] mx-auto px-6 md:my-20 py-10"
+      className="mt-10 max-w-[1000px] mx-auto px-6 md:my-20 py-10"
     >
       <div className="mt-15 pt-10">
         <motion.h2
@@ -37,7 +35,7 @@ const Portfolio = () => {
               />
             </div>
             <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+              <h3 className="text-2xl font-semibold text-primary-200 mb-4">
                 {project.title}
               </h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
@@ -45,7 +43,7 @@ const Portfolio = () => {
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 mt-4 rounded px-2 py-1 bg-neutral-900 text-sm font-medium"
+                    className="mr-2 mt-4 rounded px-2 py-1 bg-gray-900/10 text-sm font-medium border border-primary-400"
                   >
                     {tech}
                   </span>
@@ -54,15 +52,15 @@ const Portfolio = () => {
               <div className="flex space-x-4">
                 <a
                   href={project.links.live}
-                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition-all duration-300 ease-in-out"
+                  className="px-4 py-2 bg-primary-400 text-gray-200 rounded-lg hover:bg-primary-200 transition-all duration-300 ease-in-out"
                 >
                   View Site
                 </a>
                 <a
                   href={project.links.github}
-                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition-all duration-300 ease-in-out"
+                  className="px-4 py-2 bg-primary-400 text-gray-200 rounded-lg hover:bg-primary-200 transition-all duration-300 ease-in-out"
                 >
-                  <AiFillGithub className="text-2xl" />
+                  View Code
                 </a>
               </div>
             </div>

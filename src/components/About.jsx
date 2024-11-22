@@ -77,7 +77,7 @@ const About = () => {
   ];
 
   return (
-    <div id="about" className="pt-10 mt-10 max-w-[1200px] mx-auto">
+    <div id="about" className="pt-10 mt-10 max-w-[1000px] mx-auto">
       <div className="px-8 text-gray-200 pb-8 md:py-12 mt-16">
         <motion.h2
           whileInView={{ opacity: 1, y: 0 }}

@@ -5,13 +5,13 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-color: purple transparent;
+  scrollbar-color: #a855f7 transparent;
   scrollbar-width: thin;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #190b1f;
+  background-color: #250b49;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -20,15 +20,15 @@ h2 {
 }
 
 p {
-  @apply text-xl tracking-tight leading-relaxed;
+  @apply text-[18px] tracking-tight leading-relaxed;
 }
 
 span {
-  @apply text-purple-600;
+  @apply text-primary-400;
 }
 
 li {
-  @apply hover:text-purple-300 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-purple-300 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center transition-all duration-300 ease-in-out  cursor-pointer;
+  @apply hover:text-primary-200 relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary-200 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center transition-all duration-300 ease-in-out  cursor-pointer;
 }
 
 .shiny-effect {
@@ -37,8 +37,4 @@ li {
   pointer-events: none;
   z-index: 1;
   background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
-}
-
-.bg-primary-color {
-  @apply bg-purple-600;
 }

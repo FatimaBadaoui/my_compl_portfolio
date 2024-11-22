@@ -32,7 +32,7 @@ const Experience = () => {
               transition={{ duration: 0.5 * (index + 1) }}
               className="w-full md:w-1/3"
             >
-              <p className="mb-2 text-sm text-gray-200">{exp.period}</p>
+              <p className="mb-2 text-gray-200">{exp.period}</p>
             </motion.div>
 
             <motion.div
@@ -41,14 +41,14 @@ const Experience = () => {
               transition={{ duration: 0.5 * (index + 1) }}
               className="w-full max-w-xl md:w-2/3"
             >
-              <h6 className="mb-2 font-semibold text-gray-200">
+              <h4 className="mb-2 text-xl font-semibold text-gray-200">
                 {exp.position} - <span className="text-sm">{exp.company}</span>
-              </h6>
-              <p className="text-gray-400 text-sm mb-4">{exp.description}</p>
+              </h4>
+              <p className="text-gray-400 mb-4">{exp.description}</p>
               {exp.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-4 rounded px-2 py-1 bg-neutral-900 text-sm font-medium"
+                  className="mr-2 mt-4 rounded px-2 py-1 bg-gray-900/10 text-sm font-medium border border-primary-400"
                 >
                   {tech}
                 </span>

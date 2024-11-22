@@ -3,6 +3,8 @@ import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 import ShinyEffect from "./ShinyEffect.jsx";
 
+import heroImg from "../assets/hero.webp";
+
 const Hero = () => {
   return (
     <div className="mt-[25vh] max-w-[1200px] mx-auto relative p-6">
@@ -18,7 +20,7 @@ const Hero = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-gray-200 md:text-7xl text-5xl tracking-tight mb-4"
+            className="text-primary-200 md:text-7xl text-5xl tracking-tight mb-4"
           >
             Hello, I am
           </motion.p>
@@ -32,7 +34,7 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="text-3xl md:text-5xl font-bold text-purple-400 italic mb-6"
+            className="text-3xl md:text-5xl font-bold text-primary-500 italic mb-6"
           />
 
           <motion.p
@@ -75,9 +77,9 @@ const Hero = () => {
         </motion.div>
 
         <motion.img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLXuM2b4djVbMt63hftHrWFFMeQmccyytKlQ&s"
+          src={heroImg}
           alt="hero image"
-          className="w-[300px] md:w-[450px] rounded-xl"
+          className="w-[300px] md:w-[450px] rounded-3xl shadow-lg"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

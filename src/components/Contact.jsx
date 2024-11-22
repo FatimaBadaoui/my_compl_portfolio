@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const contactsInfo = [
     {
-      icon: <AiFillMail />,
+      icon: <AiFillPhone />,
       url: "#",
       text: "+49 1795681264",
     },
     {
-      icon: <AiFillPhone />,
+      icon: <AiFillMail />,
       url: "#",
       text: "f.badaoui1993@gmail.com",
     },
@@ -54,10 +54,10 @@ const Contact = () => {
                 href={contact.url}
                 className="flex items-center hover:scale-105 transition-transform duration-300"
               >
-                <p className="bg-gray-200 p-2 rounded-lg text-xl mr-5">
+                <p className="bg-primary-200 text-primary-600 p-2 rounded-lg text-xl mr-5">
                   {contact.icon}
                 </p>
-                <p className="text-gray-400 text-[16px]">{contact.text}</p>
+                <p className="text-gray-300 text-[16px]">{contact.text}</p>
               </a>
             </motion.div>
           ))}
