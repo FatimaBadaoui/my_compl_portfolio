@@ -19,10 +19,10 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md z-50">
-      <div className="max-w-[1300px] mx-auto flex justify-between text-gray-500 text-xl items-center px-12 h-20">
+      <div className="max-w-[1300px] mx-auto flex justify-between text-gray-300 text-xl items-center px-12 h-20">
         <a href="#">F. Badaoui</a>
 
-        <ul className="hidden md:flex gap-8 z-10 cursor-pointer">
+        <ul className="hidden md:flex gap-8 z-10">
           <li>
             <Link to="about" smooth={true} offset={50} duration={500}>
               About
@@ -49,7 +49,11 @@ const Navbar = () => {
           className="md:hidden z-50 text-gray-200"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+          {isOpen ? (
+            <AiOutlineClose size={30} className="cursor-pointer" />
+          ) : (
+            <AiOutlineMenu size={30} className="cursor-pointer" />
+          )}
         </div>
 
         <motion.div
