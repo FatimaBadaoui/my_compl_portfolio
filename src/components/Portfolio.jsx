@@ -50,14 +50,18 @@ const Portfolio = () => {
                 ))}
               </div>
               <div className="flex space-x-4">
-                <a
-                  href={project.links.live}
-                  className="px-4 py-2 bg-primary-400 text-gray-200 rounded-lg hover:bg-primary-200 transition-all duration-300 ease-in-out"
-                >
-                  View Site
-                </a>
+                {project.links.live && (
+                  <a
+                    href={project.links.live}
+                    target="_blank"
+                    className="px-4 py-2 bg-primary-400 text-gray-200 rounded-lg hover:bg-primary-200 transition-all duration-300 ease-in-out"
+                  >
+                    View Site
+                  </a>
+                )}
                 <a
                   href={project.links.github}
+                  target="_blank"
                   className="px-4 py-2 bg-primary-400 text-gray-200 rounded-lg hover:bg-primary-200 transition-all duration-300 ease-in-out"
                 >
                   View Code
