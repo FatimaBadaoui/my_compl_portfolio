@@ -1,6 +1,6 @@
 export const projects = [
   {
-    img: "https://via.placeholder.com/150",
+    img: "/my-portfolio.png",
     title: "My Portfolio",
     description: "Personal portfolio website. Built with only HTML and CSS",
     technologies: ["HTML", "CSS"],
@@ -10,7 +10,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/rpg.png",
     title: "RPG Game",
     description: "Role-playing game built with JavaScript",
     technologies: ["JavaScript"],
@@ -20,7 +20,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/the-projects.png",
     title: "The Projects",
     description:
       "A collection of projects built with HTML, CSS, and Vanilla JavaScript",
@@ -31,7 +31,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/react-games.png",
     title: "React Games",
     description:
       "A single-page application with multiple games built with React",
@@ -42,7 +42,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/my-3d-portfolio.png",
     title: "My 3D Portfolio",
     description: "Personal portfolio website. Built with Next.js and Three.js",
     technologies: [
@@ -61,7 +61,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/taptrack.png",
     title: "TapTrack - Restaurant Management System",
     description:
       "A full stack project designed to create a mobile application for restaurant workers. The app aims to simplify, accelerate, and digitalize their tasks",
@@ -79,7 +79,7 @@ export const projects = [
     },
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/gopool.png",
     title: "GoPool",
     description:
       "An App for car pooling from and to airport done with React Native and Expo",
