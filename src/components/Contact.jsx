@@ -20,12 +20,12 @@ const Contact = () => {
     },
     {
       icon: <AiFillLinkedin />,
-      url: "#",
+      url: "https://www.linkedin.com/in/fatima-badaoui",
       text: "linkedin.com/in/",
     },
     {
       icon: <AiFillGithub />,
-      url: "#",
+      url: "https://github.com/FatimaBadaoui",
       text: "github.com/fbadaoui",
     },
   ];
@@ -52,6 +52,7 @@ const Contact = () => {
             >
               <a
                 href={contact.url}
+                target="_blank"
                 className="flex items-center hover:scale-105 transition-transform duration-300"
               >
                 <p className="bg-primary-200 text-primary-600 p-2 rounded-lg text-xl mr-5">
