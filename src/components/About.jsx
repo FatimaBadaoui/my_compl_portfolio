@@ -94,8 +94,26 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            I am a full-stack web developer with a passion for creating web
-            applications. I have experience with the following technologies:
+            I’m a Junior Fullstack Web Developer with a strong passion for
+            learning and implementing new technologies into my everyday coding
+            workflow. My heart lies in frontend development, where I love
+            transforming complex ideas into intuitive, user-friendly interfaces.
+            Problem-solving is my forte, and I’m excited to bring my skills and
+            enthusiasm to a collaborative team environment at your company.
+            <br />
+            <br />
+            Previously, I founded an e-commerce business, where I managed
+            everything from website maintenance to product design and marketing
+            strategies. This experience sharpened my adaptability and
+            problem-solving skills, but it also made me realize how much I value
+            teamwork and the insights that come with it.
+            <br />
+            <br />
+            After completing my web development training at DCI and gaining
+            hands-on experience through an internship, I’m now actively seeking
+            new opportunities where I can contribute and continue to grow. I’m
+            eager to bring my dedication and frontend expertise to a dynamic
+            team and make a positive impact from day one!
           </motion.p>
 
           <motion.div
