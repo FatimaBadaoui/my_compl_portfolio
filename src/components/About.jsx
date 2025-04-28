@@ -94,26 +94,10 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            I’m a Junior Fullstack Web Developer with a strong passion for
-            learning and implementing new technologies into my everyday coding
-            workflow. My heart lies in frontend development, where I love
-            transforming complex ideas into intuitive, user-friendly interfaces.
-            Problem-solving is my forte, and I’m excited to bring my skills and
-            enthusiasm to a collaborative team environment at your company.
+            I’m Fatima — a frontend developer who loves building clean, responsive websites. I recently wrapped up my studies and an internship where I worked on real-world projects using HTML, CSS, JavaScript, and React.
             <br />
             <br />
-            Previously, I founded an e-commerce business, where I managed
-            everything from website maintenance to product design and marketing
-            strategies. This experience sharpened my adaptability and
-            problem-solving skills, but it also made me realize how much I value
-            teamwork and the insights that come with it.
-            <br />
-            <br />
-            After completing my web development training at DCI and gaining
-            hands-on experience through an internship, I’m now actively seeking
-            new opportunities where I can contribute and continue to grow. I’m
-            eager to bring my dedication and frontend expertise to a dynamic
-            team and make a positive impact from day one!
+            As a mom and a developer, I’m all about creating smooth, user-friendly experiences that look good and work well. I’m currently open to part-time remote work or freelance gigs—let’s connect!
           </motion.p>
 
           <motion.div
