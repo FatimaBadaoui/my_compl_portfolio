@@ -89,6 +89,17 @@ export const projects = [
       live: "https://gopool.app/",
     },
   },
+  {
+    img: "/heartlink.png",
+    title: "HeartLink",
+    description:
+      "A simple Social media App created with MERN stack and Cloudinary for media uploads. App created to stay in touch with family and friends.",
+    technologies: ["React", "Vite", "TailwindCss", "NodeJs", "ExpressJs", "MongoDB", "Axios", "Cloudinary"],
+    links: {
+      github: "https://github.com/FatimaBadaoui/heartlink",
+      live: null,
+    },
+  },
 ];
 
 export const experiences = [
