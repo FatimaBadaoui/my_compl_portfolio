@@ -27,19 +27,19 @@ const Portfolio = () => {
               index % 2 !== 0 ? "md:flex-row-reverse" : ""
             } mb-12`}
           >
-            <div className="w-full md:w-1/3 p-4">
+            <div className="w-full md:w-2/5 p-4">
               <img
                 src={project.img}
                 alt={project.title}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
-            <div className="w-full md:w-2/3 p-4 flex flex-col justify-center">
+            <div className="w-full md:w-3/5 p-4 flex flex-col justify-center">
               <h3 className="text-2xl font-semibold text-primary-200 mb-4">
                 {project.title}
               </h3>
               <p className="text-gray-300 mb-4">{project.description}</p>
-              <div className="mb-4">
+              <div className="mb-4 flex flex-wrap items-center">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}

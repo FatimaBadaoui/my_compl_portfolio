@@ -11,7 +11,7 @@ const Contact = () => {
     {
       icon: <AiFillPhone />,
       url: "#",
-      text: "+49 1795681264",
+      text: "+39 3793078337",
     },
     {
       icon: <AiFillMail />,
@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: <AiFillLinkedin />,
       url: "https://www.linkedin.com/in/fatima-badaoui",
-      text: "linkedin.com/in/",
+      text: "linkedin.com/in/fatima-badaoui",
     },
     {
       icon: <AiFillGithub />,
